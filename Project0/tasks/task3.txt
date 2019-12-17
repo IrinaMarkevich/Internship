@@ -1,0 +1,5 @@
+total 8
+-rw-r--r--  1 lodoss  staff    0 17 окт 15:08 task1.txt
+-rw-r--r--  1 lodoss  staff    0 17 окт 15:08 task2.txt
+-rw-r--r--@ 1 lodoss  staff    0 17 окт 15:08 task3.txt
+-rw-r--r--@ 1 lodoss  staff  249 17 окт 15:04 task4.txt

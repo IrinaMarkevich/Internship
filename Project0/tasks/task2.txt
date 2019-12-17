@@ -1,0 +1,96 @@
+   38 ??         0:00.56 /usr/sbin/syslogd
+   39 ??         0:00.66 /usr/libexec/UserEventAgent (System)
+   43 ??         0:01.65 /usr/libexec/kextd
+   50 ??         0:00.96 /usr/sbin/systemstats --daemon
+   52 ??         0:00.81 /usr/libexec/configd
+   56 ??         0:08.32 /usr/libexec/logd
+   57 ??         0:00.02 /usr/libexec/keybagd -t 15
+   65 ??         0:00.55 /usr/libexec/diskarbitrationd
+   69 ??         0:00.71 /usr/libexec/coreduetd
+   72 ??         0:04.94 /usr/libexec/opendirectoryd
+   76 ??         0:00.21 /usr/libexec/timed
+   77 ??         0:00.58 /usr/sbin/securityd -i
+   80 ??         0:02.75 /usr/libexec/locationd
+   82 ??         0:02.57 /usr/libexec/displaypolicyd -k 1
+   83 ??         0:01.10 /usr/libexec/dasd
+   89 ??         0:00.02 /usr/sbin/KernelEventAgent
+   91 ??         0:00.84 /usr/sbin/bluetoothd
+   92 ??         0:49.28 /usr/libexec/hidd
+   93 ??         0:00.56 /usr/libexec/sandboxd
+   94 ??         0:00.17 /usr/libexec/corebrightnessd --launchd
+   95 ??         0:00.32 /usr/libexec/AirPlayXPCHelper
+   96 ??         0:01.99 /usr/sbin/notifyd
+   97 ??         0:00.19 /usr/sbin/distnoted daemon
+   98 ??         0:00.36 /usr/libexec/syspolicyd
+   99 ??         0:01.04 /usr/sbin/cfprefsd daemon
+  116 ??         0:02.41 /usr/libexec/trustd
+  121 ??         0:00.45 /usr/libexec/lsd runAsRoot
+  126 ??         0:00.13 /usr/libexec/nehelper
+  128 ??         0:03.28 /usr/libexec/airportd
+  131 ??         0:01.83 /usr/sbin/coreaudiod
+  132 ??         0:01.77 /usr/libexec/mobileassetd
+  141 ??         0:00.59 /usr/libexec/nsurlsessiond --privileged
+  152 ??         0:01.31 /usr/libexec/symptomsd
+  163 ??         0:03.38 /usr/sbin/mDNSResponder
+  164 ??         0:00.90 /usr/sbin/mDNSResponderHelper
+  170 ??         0:00.03 /usr/libexec/apfsd
+  171 ??         0:00.04 /usr/libexec/tzd
+  172 ??         0:00.07 /usr/libexec/usbd
+  173 ??         0:00.42 /usr/libexec/firmwarecheckers/ethcheck/ethcheck --integrity-check-daemon
+  177 ??         0:00.14 /usr/libexec/watchdogd
+  178 ??         0:00.02 /usr/libexec/thermald
+  180 ??         0:00.05 /usr/libexec/secinitd
+  186 ??         0:00.05 /usr/libexec/colorsync.displayservices
+  188 ??         0:00.03 /usr/libexec/colorsyncd
+  203 ??         0:00.03 /usr/libexec/bootinstalld
+  213 ??         0:00.04 /usr/libexec/captiveagent
+  216 ??         0:00.03 /usr/sbin/distnoted agent
+  217 ??         0:00.23 /usr/sbin/netbiosd
+  225 ??         0:00.19 /usr/sbin/systemsoundserverd
+  226 ??         0:00.09 /usr/libexec/nsurlstoraged --privileged
+  228 ??         0:00.06 /usr/libexec/secinitd
+  229 ??         0:00.03 /usr/sbin/cfprefsd agent
+  230 ??         0:00.14 /usr/libexec/trustd --agent
+  231 ??         0:00.62 /usr/libexec/sysmond
+  232 ??         0:00.06 /usr/sbin/systemstats --logger-helper /private/var/db/systemstats
+  250 ??         0:00.07 /usr/libexec/securityd_service
+  251 ??         0:01.41 /usr/sbin/cfprefsd agent
+  252 ??         0:01.16 /usr/libexec/UserEventAgent (Aqua)
+  254 ??         0:01.60 /usr/sbin/distnoted agent
+  255 ??         0:01.60 /usr/sbin/universalaccessd launchd -s
+  256 ??         0:01.48 /usr/libexec/lsd
+  258 ??         0:10.81 /usr/libexec/trustd --agent
+  269 ??         0:00.33 /usr/libexec/secd
+  270 ??         0:00.39 /usr/libexec/pboard
+  276 ??         0:15.11 /usr/libexec/pkd
+  277 ??         0:01.43 /usr/libexec/secinitd
+  287 ??         0:02.32 /usr/libexec/nsurlstoraged
+  288 ??         0:00.35 /usr/sbin/usernoted
+  292 ??         0:00.23 /usr/sbin/filecoordinationd
+  297 ??         0:00.06 /usr/sbin/WirelessRadioManagerd
+  323 ??         0:00.22 /usr/sbin/wirelessproxd
+  326 ??         0:00.92 /usr/libexec/routined LAUNCHED_BY_LAUNCHD
+  330 ??         0:00.10 /usr/libexec/dmd
+  336 ??         0:01.12 /usr/libexec/sharingd
+  338 ??         0:00.38 /usr/libexec/knowledge-agent
+  342 ??         0:00.31 /usr/libexec/adprivacyd
+  343 ??         0:00.15 /usr/libexec/rapportd
+  357 ??         0:00.21 /usr/sbin/spindump
+  358 ??         0:00.02 /usr/libexec/spindump_agent
+  362 ??         0:00.15 /usr/libexec/fmfd
+  366 ??         0:00.35 /usr/libexec/nsurlsessiond
+  373 ??         0:00.08 /usr/libexec/findmydeviced
+  374 ??         0:00.11 /usr/libexec/networkserviceproxy
+  390 ??         0:00.06 /usr/libexec/dmd
+  407 ??         0:00.51 /usr/libexec/trustd --agent
+  413 ??         0:00.03 /usr/sbin/distnoted agent
+  426 ??         0:00.08 /usr/libexec/keyboardservicesd
+  433 ??         0:00.22 /usr/libexec/dprivacyd
+  496 ??         0:00.06 /usr/libexec/AssetCache/AssetCache
+  498 ??         0:00.15 /usr/libexec/swcd
+  511 ??         0:00.23 /usr/libexec/rtcreportingd
+  540 ??         0:00.07 /usr/libexec/amfid
+  587 ??         0:00.01 /usr/libexec/applessdstatistics
+  902 ??         0:00.05 /usr/bin/sysdiagnose
+ 1093 ??         0:00.16 /usr/libexec/SafariNotificationAgent
+ 1094 ??         0:00.02 /usr/sbin/ocspd

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+mkdir tasks
+cd tasks
+
+touch task1.txt
+touch task2.txt
+
+echo " "
+
+ls -lsr
+
+echo " "
+
+ls -l > task3.txt
+
+touch task4.txt
+
+cp task3.txt task4.txt 
+
+echo “*** task4.txt ***”
+
+echo " "
+
+cat task4.txt
+
+echo " "
+
+echo “-----------”
+
+echo " "
+
+ps -A > task1.txt
+
+grep 'usr' task1.txt > task2.txt

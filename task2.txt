@@ -1,0 +1,105 @@
+class Product {
+  constructor (name) {
+    this.name = name
+    this.producedProduct = 0
+    this.needProduct = 0
+    this.suppliedProduct = 0
+    this.countProducedProduct = 0
+    this.countSuppliedProduct = 0
+    this.countProducedTotal = 0
+    this.countSuppliedTotal = 0
+    this.proverka = []
+  }
+
+  model () {
+    for (let i = 0; i < 10; i++) {
+      this.proverka[i] = {
+        producedProduct: this.producedProduct,
+        needProduct: this.needProduct,
+        suppliedProduct: this.suppliedProduct
+      }
+      this.proverka[i].producedProduct = producer.addProduct()
+      this.proverka[i].needProduct = buyer.needProduct()
+      this.proverka[i].suppliedProduct = provider.suppliedProduct(this.proverka[i].needProduct, this.proverka[i].producedProduct)
+
+      producer.subtractProduct(this.proverka[i].suppliedProduct)
+
+      this.countProducedTotal += this.proverka[i].producedProduct
+      this.countSuppliedTotal += this.proverka[i].suppliedProduct
+
+      if (i > 6) {
+        this.countProducedProduct += this.proverka[i].producedProduct
+        this.countSuppliedProduct += this.proverka[i].suppliedProduct
+      }
+      if (i === 9) {
+        this.proverka[i].countProduced = this.countProducedProduct
+        this.proverka[i].countSupplied = this.countSuppliedProduct
+        this.proverka[i].KPD = this.countSuppliedTotal / this.countProducedTotal
+      }
+    }
+    return this.proverka
+  }
+}
+
+class Producer {
+  constructor (name) {
+    this.name = name
+    this.amount = 0
+  }
+
+  addProduct () {
+    this.amount += Math.floor(Math.random() * (150 - 50 + 1)) + 50
+    return this.amount
+  }
+
+  subtractProduct (order) {
+    this.amount -= order
+    return this.amount
+  }
+}
+
+class Buyer {
+  constructor (name) {
+    this.name = name
+    this.amount = 0
+  }
+
+  needProduct () {
+    this.amount = Math.floor(Math.random() * (120 - 70 + 1)) + 70
+    return this.amount
+  }
+}
+
+class Provider {
+  constructor (name) {
+    this.name = name
+    this.maxAmount = 100
+  }
+
+  suppliedProduct (needAmount, producedAmount) {
+    if (needAmount <= producedAmount) {
+      if (needAmount > 100) {
+        this.amount = 100
+      } else {
+        this.amount = needAmount
+      }
+    } else {
+      if (producedAmount > 100) {
+        this.amount = 100
+      } else {
+        this.amount = producedAmount
+      }
+    }
+
+    return this.amount
+  }
+}
+const producer = new Producer()
+
+const buyer = new Buyer()
+
+const provider = new Provider()
+
+const Model = new Product()
+
+console.table(Model.model())
